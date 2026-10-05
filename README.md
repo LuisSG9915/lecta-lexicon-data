@@ -10,7 +10,7 @@ pueda reutilizarlas.
 | Archivo | Contenido | Filas | Licencia |
 |---|---|---|---|
 | `forms-es.csv.gz` | `form,lemma` — cada forma flexionada apunta a su lema | 665 732 | **ODbL 1.0** (`LICENSE-ODbL-1.0.txt`) |
-| `lemmas-freq-es.csv.gz` | `lemma,zipf` — frecuencia en escala zipf (~0–8; 0 = sin medida) | 71 646 | **CC BY-SA 4.0** (`LICENSE-CC-BY-SA-4.0.txt`) |
+| `lemmas-freq-es.csv.gz` | `lemma,zipf` — frecuencia en escala zipf (~0–8; vacío = sin medida) | 71 646 | **CC BY-SA 4.0** (`LICENSE-CC-BY-SA-4.0.txt`) |
 
 ## Cómo se generaron
 
@@ -19,8 +19,8 @@ pueda reutilizarlas.
    (script `lexicon-export.py` del repo principal de Lecta).
 2. `lemmas-freq-es.csv.gz`: frecuencias `zipf_frequency` de
    [wordfreq](https://github.com/rspeer/wordfreq) 3.1.1 para cada lema
-   de la lista anterior (40 013 lemas con frecuencia medida; el resto
-   quedó en `0.00` por no aparecer en wordfreq).
+   de la lista anterior (40 013 lemas con frecuencia medida; los demás
+   llevan `zipf` vacío porque wordfreq no los tiene en su corpus).
 
 ## Fuentes y créditos
 
